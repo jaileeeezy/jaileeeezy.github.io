@@ -29,14 +29,27 @@ p {
     font-family: "Courier New";
 }
 
-img#welcome {
-	width: 100%;
-	height: 70%;
-}
-
-img#social{
+img#social {
 	width: 3.5%;
 	height:  3.5%;
 }
 
+img.welcome {
+	width: 3.5%;
+	height:  3.5%;
+}
 
+div.featured {
+  height: 25%;
+  width: 25%;
+}
+
+img.banner {
+  height: 100%;
+  width: 100%;
+}
+
+img.thumbnail {
+  height: 50%;
+  width: 20%;
+}
