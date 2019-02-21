@@ -1,81 +1,47 @@
-
-@import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Pacifico');
-
 * {
-margin: 0;
-padding: 0;
-border: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+header {
+	background: #FFED74;
+	border: 1px black solid;
+    padding: 20px;
+}
+
+nav	{
+	background: #E8C66A;
+	border: 1px black solid;
+    padding: 20px;
+}
+
+article {
+	background: #E89C6C;
+	border: 1px black solid;
+    padding: 20px;
+}
+
+#featured {
+	background: #CCB927;
+}
+
+#welcome {
+	background: red;
+}
+
+footer {
+	background: #FF957E;
+	border: 1px black solid;
+    padding: 20px;
 }
 
 section {
-	padding: 3em;
+	background: #FFE2B8;
+	border: 1px black solid;
+    padding: 20px;
 }
 
-body {
-    background-color: white;
+img {
+	width: 10%
 }
-
-h1 {
-	color: #22A1B2;
-	font-family: 'Pacifico', cursive;
-	font-size: 5em;
-	text-shadow: 3px 2px black;
-	line-height: .75px;
-}
-
-h2 {
-	color: #FF64B2;
-	font-family: 'Pacifico', cursive;
-	font-size: 2em;
-	text-shadow: 1px 1px black;
-}
-
-h3 {
-	color: #22A1B2;
-	font-family: 'Josefin Slab', serif;
-	font-size: 1em;
-}
-
-ul	{
-	display: inline;
-}
-
-p {
-	color: black;
-	font-family: 'Josefin Slab', serif;
-	font-size: 1em;
-}
-
-p.date {
-	color: #22A1B2;
-	font-family: 'Josefin Slab', serif;
-	font-size: .5em;
-}
-
-img#social {
-	width: 3.5%;
-	height:  3.5%;
-}
-
-img.welcome {
-	width: 3.5%;
-	height:  3.5%;
-}
-
-div.featured {
-  height: 25%;
-  width: 25%;
-}
-
-img.banner {
-  height: 100%;
-  width: 100%;
-}
-
-img.thumbnail {
-  height: 50%;
-  width: 20%;
-}
-
-
-
