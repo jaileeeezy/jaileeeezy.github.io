@@ -1,0 +1,158 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+} 
+
+body {
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+	background-color: pink;
+	padding: 20px 20px 15px 20px;
+	display: flex;
+	width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+nav {
+	clear: both;
+}
+
+div#logo {
+	height: 350px;
+  	width: 200px;
+  	background-color: white;
+  	float: left;
+}
+
+
+h1 {
+	color: #22A1B2;
+	font-size: 5em;
+	text-shadow: 3px 2px black;
+	line-height: .75px;
+	font-family: 'Norican', cursive;
+	margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h2 {
+	color: #FF64B2;
+	font-size: 2em;
+	text-shadow: 1px 1px black;
+	font-family: 'Norican', cursive;
+	text-align: center;
+}
+
+h3 {
+	color: #22A1B2;
+	font-size: 1em;
+}
+
+p {
+	color: black;
+	font-size: 1em;
+}
+
+p.date {
+	color: #22A1B2;
+	font-size: 1em;
+}
+
+img#hero {
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+section#welcome {
+  	width: 100%;
+}
+
+section#bio {
+  	width: 600px;
+  	background-color: yellow;
+}
+
+img.thumbnail {
+  width: 355px;
+}
+
+img#headshot {
+  width: 21%;
+}
+
+div#articles {
+	width: 100%;
+	background-color: pink;
+}
+
+article {
+	float: left;
+	height: 400px;
+  	width: 600px;
+  	background-color: pink;
+  	display: block;
+}
+
+section#newsletter	{
+	height: 150px;
+  	width: 600px;
+  	background-color: yellow;
+}
+
+footer {
+	background-color: pink;
+	padding: 20px 20px 15px 20px;
+	display: flex;
+	width: 100%;
+}
+
+div#social {
+	float: right;
+}
+
+img#social {
+	width: 3.5%;
+	float: right;
+	display: inline;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    display: block;
+}
