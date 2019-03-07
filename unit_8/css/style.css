@@ -1,0 +1,159 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+} 
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: rgba(255,177,95, .75);
+}
+
+header {
+	background-color: rgb(33, 164, 178);
+	padding: 20px;
+  width: 100%;
+}
+
+div#logo {
+  background-color: #22a1b2;
+  float: left;
+  text-align: justify;
+  width: 50%;
+}
+
+h1 {
+	color: yellow;
+	font-size: 5em;
+	text-shadow: 3px 2px black;
+	font-family: 'Norican', cursive;
+}
+
+h2 {
+	color: #FF64B2;
+	font-size: 2.5em;
+	text-shadow: 1px 1px black;
+	font-family: 'Norican', cursive;
+}
+
+h3 {
+	color: #22A1B2;
+	font-size: 1.5em;
+}
+
+div#search {
+	float: right;
+}
+
+nav	{
+	float: left;
+}
+
+ul {
+  background-color: #22a1b2;
+  list-style-type: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 50px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+#welcome {
+	background-image: url('../images/hero.jpg');
+	height: 500px;	
+	width: 100%;
+	float:left;
+}
+
+.paragraph {
+  background-color: rgba(255, 165, 24, .8);
+  float: left;
+  border-color: pink;
+  width: 30%;
+  padding: 30px;
+  margin: 50px;
+}
+
+p.date {
+	color: #22A1B2;
+	font-size: 1em;
+}
+
+section#bio {
+  width: 50%;
+  background-color: rgba(148, 228, 255, .8);
+  margin: 10px auto 10px auto;
+  padding: 25px;
+}
+
+img#headshot {
+  width: 30%;
+  float: left;
+  padding: 10px;
+}
+
+img.thumbnail {
+  width: 355px;
+}
+
+div#articles {
+	background-color: pink;
+	margin: auto;
+  width: 100%;
+}
+
+article {
+	background-color: pink;
+  display: block;
+  float: left;
+  margin: auto;
+  padding: 30px;
+  width: 50%;
+}
+
+section#newsletter	{
+  width: 50%;
+  background-color: yellow;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+footer {
+	background-color: rgb(33, 164, 178);
+	padding: 20px;
+	width: 100%;
+}
+
+div#social {
+	float: right;
+}
+
+img#social {
+	width: 3.5%;
+	float: right;
+	display: inline;
+}
+
+.clearfix:after {
+  content: " ";
+  clear: both;
+  display: block;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+
