@@ -8,6 +8,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: 1em;
   padding: 1.5%;
+  color: white;
 }
 
 header {
@@ -52,6 +53,16 @@ nav	{
   background-color: rgb(33, 164, 178);
 }
 
+header nav {
+  font-size: 1.25em;
+}
+
+ul li {
+  border-right-style: solid;
+  border-right-color: white;
+  border-right-width: .24em;
+}
+
 ul {
   list-style-type: none;
   width: 100%;
@@ -65,21 +76,35 @@ li {
   padding: 1%;
 }
 
+li:nth-of-type(4) {
+  border-right: none;
+}
+
 li a {
-  color: white;
   text-align: center;
   text-decoration: none;
 }
 
-li a:hover {
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: rgba(254, 224, 10, .8);
+}
+
+a:hover {
   background-color: rgb(255, 165, 24);
-  width: 25%;
+}
+
+a:active {
+  color: white;
 }
 
 #welcome {
 	background-image: url('../images/hero2.jpg');	
   float:left;
-  height: -webkit-fill-available;
+  margin-bottom: 1%;
   text-align: justify;
   width: 100%;
 }
@@ -96,7 +121,8 @@ li a:hover {
   background-color: rgba(255, 255, 255, .87);
   border: .25em solid rgba(255, 255, 255, .87);
   border-radius: 1.5em;
-  margin: 6%;
+  color: black;
+  margin: 5%;
   padding: 2.2%;
   width: 25%;
 }
@@ -105,13 +131,12 @@ li a:hover {
   background-color: rgb(33, 164, 178);
   border-radius: 1.5em;
   clear: both;
-  margin: 0 25% 0 25%;
+  margin: 0 25% 1% 25%;
   padding: 1%;
   width: 50%;
 }
 
 #bio p {
-  color: white;
   text-align: justify;
 }
 
@@ -154,22 +179,29 @@ article {
   border-bottom: white 1px solid;
 }
 
+article:nth-of-type(4) {
+  border-bottom:none;
+}
+article:nth-of-type(3) {
+  border-bottom:none;
+}
+
 article p {
   text-align: justify;
-  color: white;
 }
 
 section#newsletter	{
   background-color: rgb(33, 164, 178);
   border-radius: 1.5em;
   width: 50%;
-  margin: 0 auto;
-  padding: 3%;
+  margin: 0 auto 1% auto;
+  padding: 1%;
 }
 
 footer {
 	background-color: rgb(33, 164, 178);
-	padding: 20px;
+	padding: 5%;
+  margin: auto;
 	width: 100%;
 }
 
@@ -177,10 +209,12 @@ div#social {
 	float: right;
 }
 
-img#social {
-	width: 3.5%;
+#social img {
+	width: 10%;
 	float: right;
-	display: inline;
+  display: inline;
+  padding: 1%;
+  margin: auto;
 }
 
 .clearfix:after {
