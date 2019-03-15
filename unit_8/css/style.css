@@ -126,7 +126,7 @@ a:active {
 
 #welcome {
 	background-image: url('../images/hero2.jpg');	
-  background-position-y: 59%;
+  background-position-y: 33%;
   background-size: cover;
   margin-bottom: 2%;
   text-align: center;
@@ -442,4 +442,14 @@ footer p {
   }
   #welcome {
   background-image: url('../images/bali-swing.jpg'); 
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+   font-size: 14px;
+  }
+  .paragraph {
+    width: 95%;
+    margin: 0% 2.5%;
+  }
 }
