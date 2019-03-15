@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Raleway', sans-serif;
-  font-size: 1em;
+  font-size: 14px;
   padding: 1.5%;
   color: white;
 }
@@ -15,31 +15,54 @@ header {
   width: 100%;
 }
 
+label {
+  display: none;
+}
 
-div#logo {
+#toggle {
+  display: none;
+}
+
+input {
+  width: 70%;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+input#button {
+  width: 15%;
+  margin: 0 auto;
+  font-size: inherit;
+  font-family: inherit;
+  background-color: rgb(255, 165, 24);
+  padding: 3%;
+}
+
+#logo {
   margin: 0 auto;
   text-align: center;
-  line-height: 3.48em;
+  line-height: 3em;
   padding: 2%;
+  clear: both;
 }
 
 h1 {
 	color: rgb(33, 164, 178);
-	font-size: 6em;
+	font-size: 4.5em;
 	text-shadow: 3px 2px rgba(33, 164, 178, 0.4);
 	font-family: 'Norican', cursive;
 }
 
 h2 {
 	color: rgb(255, 165, 24);
-  font-size: 4em;
+  font-size: 2.5em;
 	font-family: 'Norican', cursive;
   text-shadow: 3px 2px rgba(255, 165, 24, 0.1);
 }
 
 h3 {
 	color: rgb(255, 165, 24);
-	font-size: 2em;
+	font-size: 1.5em;
 }
 
 div#search {
@@ -103,10 +126,12 @@ a:active {
 
 #welcome {
 	background-image: url('../images/hero2.jpg');	
-  float:left;
-  margin-bottom: 1%;
-  text-align: justify;
+  background-position-y: 59%;
+  background-size: cover;
+  margin-bottom: 2%;
+  text-align: center;
   width: 100%;
+  padding: 6em;
 }
 
 #welcome h3 {
@@ -122,6 +147,7 @@ a:active {
   border: .25em solid rgba(255, 255, 255, .87);
   border-radius: 1.5em;
   color: black;
+  float: right;
   margin: 5%;
   padding: 2.2%;
   width: 25%;
@@ -145,9 +171,9 @@ a:active {
 }
 
 img#headshot {
-  width: 30%;
+  width: 40.5%;
   float: left;
-  padding: 1%;
+  padding: 3%;
 }
 
 img.thumbnail {
@@ -156,7 +182,7 @@ img.thumbnail {
   width: 60%;
 }
 
-div#articles {
+#articles {
 	background-color: rgb(33, 164, 178);
   border-radius: 1.5em;
   margin: 2% auto 2% auto;
@@ -190,12 +216,37 @@ article p {
   text-align: justify;
 }
 
-section#newsletter	{
+#newsletter	{
   background-color: rgb(33, 164, 178);
   border-radius: 1.5em;
   width: 50%;
   margin: 0 auto 1% auto;
   padding: 1%;
+}
+
+#formname {
+  width: 80%;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 2%;
+  margin: 1% 10%;
+}
+
+#formemail {
+  width: 80%;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 2%;
+  margin: 1% 10%;
+}
+
+#submit {
+  width: 50%;
+  padding: 3%;
+  margin: 1% 20%;
+  font-size: inherit;
+  font-family: inherit;
+  background-color: rgb(255, 165, 24);
 }
 
 footer {
@@ -205,16 +256,19 @@ footer {
 	width: 100%;
 }
 
-div#social {
-	float: right;
+#social {
+  width: 100%;
+  margin: 2% auto;
 }
 
 #social img {
-	width: 10%;
-	float: right;
-  display: inline;
-  padding: 1%;
-  margin: auto;
+	width: 33%;
+  padding: 0 13%;
+}
+
+footer p {
+  clear: both;
+  text-align: center;
 }
 
 .clearfix:after {
@@ -226,3 +280,166 @@ div#social {
   visibility: hidden;
 }
 
+@media only screen and (max-width: 1220px) {
+  #bio{
+    width: 55%;
+    margin: 0 auto;
+  }
+  .paragraph {
+    width: 40%;
+    float: right;
+  }
+  #welcome {
+  background-position-y: 35%;
+  padding: 5em;
+}
+}
+@media only screen and (max-width: 1132px) {
+  h1 {
+    font-size: 3.5em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  #logo {
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2.2em;
+    padding: 2%;
+    clear: both;
+  }
+  #social img {
+    width: 7.5%;
+    padding: 0;
+    margin: 0 12%;
+  }
+  img#headshot {
+    width: 42%;
+  }
+  #bio{
+    width: 60%;
+    margin: 0 auto;
+  }
+  #bio p{
+    padding: 5%;
+  }
+}
+@media only screen and (max-width: 1073px) {
+  img.thumbnail {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 3% 0 3%;
+  }
+  header nav {
+  font-size: 1em;
+  }
+  #articles {
+  width: 80%;
+  }
+  #articles h2{
+    font-size: 2.6em;
+    text-align: center;
+  }
+  #articles h3{
+    font-size: 1.7em;
+  }
+  article {
+    float: none;
+    border-left: none;
+    width: 85%;
+    padding: 7%;
+    margin: 0 auto;
+  }
+  article:nth-of-type(1) {
+   border-top: white 1px double;
+  }
+  article:nth-of-type(3) {
+   border-bottom: white 1px solid;
+  }
+  body {
+    font-size: 15px;
+  }
+  #bio {
+    margin: 0 auto;
+    width: 80%;
+  }
+  #bio h2 {
+    font-size: 3em;
+  }
+  .paragraph {
+    width: 47%;
+  }
+  p.date {
+  font-size: 1em;
+  }
+  #newsletter  {
+    width: 80%;
+    margin: 0 auto 3% auto;
+    padding: 3%;
+  }
+  #newsletter h2 {
+    font-size: 3em;
+    text-align: center;
+  }
+  #newsletter p {
+    text-align:center;
+  }
+  #formname {
+    padding: 1%;
+    margin: 1% 10%;
+  }
+  #formemail {
+    padding: 1%;
+    margin: 1% 10%;
+  }
+  #submit {
+  padding: 1%;
+  margin: 1% 25%;
+}
+}
+@media only screen and (max-width: 875px) {
+  img#headshot{
+    width: 50%;
+    margin: 0 25%;
+    float: none;
+  }
+  #bio p {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 816px) {
+  .paragraph {
+    width: 60%;
+    float: none;
+    margin: 0% 20%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  #search{
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  nav a:link{
+    display: block;
+    padding: 5%;
+    margin: 5%;
+  }
+  #lander label{
+    background-color: rgb(33, 164, 178);
+    text-align: center;
+    display: block;
+    padding: 3% 7%;
+    font-size: 1.2em;
+  }
+  #toggle:checked + nav{
+    display: block;
+  }
+  .paragraph{
+    width: 80%;
+    margin: 0% 10%;
+  }
+  #welcome {
+  background-image: url('../images/bali-swing.jpg'); 
+}

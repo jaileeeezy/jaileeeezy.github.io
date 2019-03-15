@@ -9,15 +9,19 @@
 	<header class="clearfix">
 		<div id="search" class="clearfix">
 			<form action="#">
+            <label for="formname">Search the Blog</label>
             <input type="text" name="search" placeholder="Search the Blog">
-            <input type="submit" name="search" value="Submit">  
+            <input type="submit" name="search" value="Go" id="button">  
         	</form>
         </div>
 		<div id="logo" class="clearfix">
 			<h1>Jaycation</h1>
 			<h2>always wandering. never lost.</h2>
 		</div>
-
+		<div id="lander">
+			<label for="toggle">MENU</label>
+			<input type="checkbox" id="toggle">
+		</div>
 		<nav>
 			<ul>
 				<li><a href="#">Tavel Blog</a></li>
@@ -34,7 +38,7 @@
 			</div>
 	</section>
 	<section id="bio" class="clearfix">
-		<img src="images/headshot.jpg" alt="Jaileez Headshot" title="Meet Jaileez!" id="headshot">
+		<img src="images/headshot-crop.jpg" alt="Jaileez Headshot" title="Meet Jaileez!" id="headshot">
 		<div>
 		<h2>Meet Jaileez!</h2>
 		<p>
@@ -89,24 +93,16 @@
 				<input type="text" name="name" placeholder="Name" id="formname"><br>
 				<label for="formemail">Email</label>
 				<input type="text" name="email" placeholder="E-mail" id="formemail"><br>
-				<input type="submit" name="Submit" value="Submit">	
+				<input type="submit" name="Submit" value="Submit" id="submit">	
 			</form>
 		</section>
 	</div>
 	<footer>
-		<nav class="clearfix">
-			<ul>
-				<li><a href="#">Tavel Blog</a></li>
-				<li><a href="#">Travel Iteniraries</a></li>
-				<li><a href="#">Packing Guides</a></li>
-				<li><a href="#">Photography</a></li>
-			</ul>
-		</nav>
-		<div id="social" class="clearfix">
+		<div id="social">
 			<a href="#"><img src="images/twitter.PNG" alt="Twitter" title="Follow me on Twitter!"></a>
 			<a href="#"><img src="images/fb.PNG" alt="Facebook" title="Add me on Facebook!"></a>
 			<a href="#"><img src="images/instagram.PNG" alt="Instagram" title="Follow me on Instagram!"></a>
-		</div>
+		</div>		
 		<p>Copyright&copy; 2019</p>
 	</footer>
 </body>
