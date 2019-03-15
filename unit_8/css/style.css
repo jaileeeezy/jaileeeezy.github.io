@@ -448,8 +448,14 @@ footer p {
   body {
    font-size: 14px;
   }
-  .paragraph {
-    width: 95%;
-    margin: 0% 2.5%;
+  #logo h2{
+    font-size: 1.5em;
+  }
+  .paragraph{
+    width: 90%;
+  }
+  #bio {
+    width: 90%;
+    margin: 0 5%;
   }
 }
