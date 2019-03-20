@@ -1,0 +1,162 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+} 
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  padding: 1%;
+  color: white;
+}
+header {
+  width: 100%;
+}
+label {
+  display: none;
+}
+input {
+  width: 80%;
+  font-size: inherit;
+  font-family: inherit;
+}
+#logo {
+  margin: 0 auto;
+  text-align: center;
+  line-height: 3em;
+  padding: 2em;
+  clear: both;
+}
+h1 {
+	color: rgb(33, 164, 178);
+	font-size: 4.5em;
+	text-shadow: 3px 2px rgba(33, 164, 178, 0.4);
+	font-family: 'Norican', cursive;
+}
+h2 {
+	color: rgb(255, 165, 24);
+	font-size: 2.5em;
+	font-family: 'Norican', cursive;
+	text-shadow: 3px 2px rgba(255, 165, 24, 0.1);
+}
+h3 {
+	color: rgb(255, 165, 24);
+	font-size: 1.5em;
+}
+h4, h5 {
+  color: rgb(236, 255, 6);
+  font-size: 1em;
+}
+#search {
+	float: right;
+  width: 50%;
+}
+#button {
+  width: 10%;
+  margin: 0 auto;
+  background-color: rgb(255, 165, 24);
+  padding: 1em;
+}
+#formsearch {
+  width: 45%;
+  padding: 1em;
+  margin-left: 40%;
+}
+nav	{
+  float: left;
+  width: 100%;
+  background-color: rgb(33, 164, 178);
+}
+header nav {
+  font-size: 1.25em;
+}
+ul li {
+  border-right: white .24em solid;
+}
+ul {
+  list-style-type: none;
+  width: 100%;
+}
+li {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+li:nth-of-type(4) {
+  border-right: none;
+}
+li a {
+  text-align: center;
+  padding: 1.5em;
+  display: block;
+}
+a:link {
+  color: white;
+}
+a:visited {
+  color: rgb(236, 255, 6);
+}
+a:hover {
+  background-color: rgb(255, 165, 24);
+}
+a:active {
+  color: pink;
+}
+main {
+  float: left;
+  clear: both;
+  width: 66.666%;
+  min-height: 50em;
+}
+article {
+  background-color: rgb(33, 164, 178);
+  border-radius: 1.5em;
+  padding: 2.2em;
+}
+article > img {
+  margin-left: 20%;
+  margin-right: 20%;
+  width: 60%;
+}
+aside {
+  float: right;
+  background-color: rgb(33, 164, 178);
+  border-radius: 1.5em;
+  width: 33.33333%;
+  padding: 2em;
+}
+#aside > li{
+  display: block;
+  float: none;
+  border-right: none;
+}
+#aside{
+  list-style-type: initial;
+  border-right: none;
+}
+footer {
+  background-color: yellow;
+  padding: 5%;
+  clear: both;
+  width: 100%;
+}
+#social {
+  width: 80%;
+  margin: 0 40%;
+  padding: 0 5em;
+}
+#social img {
+  width: 5%;
+}
+#copyright {
+  width: 100%;
+  text-align: center;
+}
+.clearfix:after {
+  content: " ";
+  clear: both;
+  display: block;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}

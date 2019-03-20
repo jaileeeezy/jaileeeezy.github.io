@@ -1,0 +1,450 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+} 
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  padding: 1%;
+  color: white;
+}
+header {
+  width: 100%;
+}
+label {
+  display: none;
+}
+input {
+  width: 80%;
+  font-size: inherit;
+  font-family: inherit;
+}
+#logo {
+  margin: 0 auto;
+  text-align: center;
+  line-height: 3em;
+  padding: 2em;
+  clear: both;
+}
+h1 {
+	color: rgb(33, 164, 178);
+	font-size: 4.5em;
+	text-shadow: 3px 2px rgba(33, 164, 178, 0.4);
+	font-family: 'Norican', cursive;
+}
+h2 {
+	color: rgb(255, 165, 24);
+	font-size: 2.5em;
+	font-family: 'Norican', cursive;
+	text-shadow: 3px 2px rgba(255, 165, 24, 0.1);
+}
+h3 {
+	color: rgb(255, 165, 24);
+	font-size: 1.5em;
+}
+#search {
+	float: right;
+  width: 50%;
+}
+#button {
+  width: 10%;
+  margin: 0 auto;
+  background-color: rgb(255, 165, 24);
+  padding: 1em;
+}
+#formsearch {
+  width: 45%;
+  padding: 1em;
+  margin-left: 40%;
+}
+nav	{
+  float: left;
+  width: 100%;
+  background-color: rgb(33, 164, 178);
+}
+header nav {
+  font-size: 1.25em;
+}
+ul li {
+  border-right: white .24em solid;
+}
+ul {
+  list-style-type: none;
+  width: 100%;
+}
+li {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+li:nth-of-type(4) {
+  border-right: none;
+}
+li a {
+  text-align: center;
+  padding: 1.5em;
+  display: block;
+}
+a:link {
+  color: white;
+}
+a:visited {
+  color: rgb(236, 255, 6);
+}
+a:hover {
+  background-color: rgb(255, 165, 24);
+}
+a:active {
+  color: pink;
+}
+#welcome {
+  background-image: url('../images/hero2.jpg');	
+  background-position-y: 27%;
+  background-size: cover;
+  margin-bottom: 4%;
+  text-align: center;
+  width: 100%;
+  padding: 5.5em;
+}
+#welcome h3 {
+  color: rgb(33, 164, 178);
+  font-family: 'Norican', cursive;
+  font-size: 2.5em;
+  text-shadow: 3px 2px rgba(33, 164, 178, 0.4);
+  text-align: center;
+}
+.paragraph {
+  background-color: rgba(255, 255, 255, .87);
+  border: .25em solid rgba(255, 255, 255, .87);
+  border-radius: 1.5em;
+  color: black;
+  float: right;
+  margin: 5%;
+  padding: 2.2em;
+  width: 25%;
+  text-align: justify;
+}
+#bio {
+  background-color: rgb(33, 164, 178);
+  border-radius: 1.5em;
+  clear: both;
+  margin: 0 25% 4% 25%;
+  padding: 2.5em;
+  width: 50%;
+}
+#bio p {
+  text-align: justify;
+  padding: 0 2.5em 0 2.5em;
+}
+#bio h2 {
+  text-align: center;
+}
+img#headshot {
+  width: 40.5%;
+  float: left;
+  padding: 3%;
+}
+img.thumbnail {
+  margin-left: 20%;
+  margin-right: 20%;
+  width: 60%;
+}
+#articles {
+	background-color: rgb(33, 164, 178);
+  border-radius: 1.5em;
+  margin: 4% auto 4% auto;
+  width: 100%;
+}
+#articles h2 {
+	text-align: center;
+	font-size: 2.7em;
+}
+p.date {
+  color: rgb(254, 224, 10);
+  font-style: italic;
+  font-size: 1.5em;
+}
+article {
+  display: block;
+  float: left;
+  margin: auto;
+  padding: 2.2em;
+  width: 50%;
+  border-top: white 1px solid;
+  border-right: white 1px solid;
+}
+article:nth-of-type(even) {
+  border-right: hidden;
+}
+article:nth-of-type(1) {
+  border-top: hidden;
+}
+article:nth-of-type(2) {
+  border-top: hidden;
+}
+article p {
+  text-align: justify;
+}
+#newsletter	{
+  background-color: rgb(33, 164, 178);
+  border-radius: 1.5em;
+  width: 50%;
+  margin: 0 auto 4% auto;
+  padding: 1%;
+}
+#formname {
+  width: 80%;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 2%;
+  margin: 1% 10%;
+}
+#formemail {
+  width: 80%;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 2%;
+  margin: 1% 10%;
+}
+#submit {
+  width: 50%;
+  padding: 3%;
+  margin: 1% 20%;
+  font-size: inherit;
+  font-family: inherit;
+  background-color: rgb(255, 165, 24);
+}
+footer {
+	background-color: rgb(33, 164, 178);
+	padding: 5%;
+  margin: auto;
+	width: 100%;
+}
+#social {
+  width: 80%;
+  margin: 0 40%;
+  padding: 0 5em;
+}
+#social img {
+	width: 5%;
+}
+#copyright {
+  width: 100%;
+  text-align: center;
+}
+.clearfix:after {
+  content: " ";
+  clear: both;
+  display: block;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 1220px) {
+  #bio{
+    width: 55%;
+    margin: 0 auto;
+  }
+  .paragraph {
+    width: 40%;
+    float: right;
+  }
+  #welcome {
+    background-position-y: 35%;
+    padding: 5em;
+  }
+}
+@media only screen and (max-width: 1132px) {
+  h1 {
+    font-size: 3.5em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  #logo {
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2.2em;
+    padding: 2%;
+    clear: both;
+  }
+  #social img {
+    width: 7.5%;
+    padding: 0;
+  }
+  img#headshot {
+    width: 42%;
+  }
+  #bio{
+    width: 60%;
+    margin: 0 auto;
+  }
+  #bio p{
+    padding: 5%;
+  }
+}
+@media only screen and (max-width: 1077px) {
+  img.thumbnail {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 3% 0 3%;
+  }
+  header nav {
+  font-size: 1em;
+  }
+  #articles {
+  width: 80%;
+  }
+  #articles h2{
+    font-size: 2.6em;
+    text-align: center;
+  }
+  #articles h3{
+    font-size: 1.7em;
+  }
+  article {
+    float: none;
+    border-right: none;
+    width: 85%;
+    padding: 7%;
+    margin: 0 auto;
+  }
+  article:nth-of-type(1) {
+    border-top: white 2px solid;
+  }
+  article:nth-of-type(2) {
+    border-top: white 1px solid;
+  }
+  body {
+    font-size: 15px;
+  }
+  #bio {
+    margin: 0 auto;
+    width: 80%;
+  }
+  #bio h2 {
+    font-size: 3em;
+  }
+  .paragraph {
+    width: 47%;
+  }
+  p.date {
+    font-size: 1em;
+  }
+  #newsletter  {
+    width: 80%;
+    margin: 0 auto 3% auto;
+    padding: 3%;
+  }
+  #newsletter h2 {
+    font-size: 3em;
+    text-align: center;
+  }
+  #newsletter p {
+    text-align:center;
+  }
+  #formname {
+    padding: 1%;
+    margin: 1% 10%;
+  }
+  #formemail {
+    padding: 1%;
+    margin: 1% 10%;
+  }
+  #submit {
+  padding: 1%;
+  margin: 1% 25%;
+  }
+  #social {
+  margin: 0 35%;
+  }
+  #social img {
+  width: 9%;
+  }
+}
+@media only screen and (max-width: 816px) {
+  .paragraph {
+    width: 60%;
+    float: none;
+    margin: 0% 20%;
+  }
+  #social img {
+  width: 4em;
+  }
+  #social {
+  margin: 0 20%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  #search{
+    display: none;
+  }
+  .paragraph{
+    width: 80%;
+    margin: 0% 10%;
+  }
+}
+@media only screen and (max-width: 685px) {
+  nav a:link{
+    display: block;
+    padding: 2.6em;
+  }
+  nav {
+    float: none;
+  }
+  ul li {
+    border-right: none;
+    border-bottom: white 1px solid;
+  }
+  li {
+    float: none;
+    width: 100%;
+  }
+  li a {
+    text-align: center;
+    padding: 1.5em;
+    display: block;
+  }
+  #submit {
+    padding: 1.5em;
+  }
+  #formname {
+    padding: 1em;
+  }
+  #formemail {
+    padding: 1em;
+  }
+  #welcome {
+    background-image: url('../images/bali-swing.jpg');
+  }
+  #social {
+  margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 480px) {
+  body {
+   font-size: 14px;
+  }
+  #logo h2{
+    font-size: 1.5em;
+  }
+  .paragraph{
+    width: 100%;
+    margin: 0;
+  }
+  #bio {
+    width: 90%;
+    margin: 0 5%;
+  }
+  #submit {
+    padding: 1.75em;
+  }
+  #formname {
+    padding: 1.75em;
+  }
+  #formemail {
+    padding: 2em;
+  }
+}
