@@ -326,7 +326,9 @@ footer {
     clear: both;
   }
   img#headshot {
-    width: 42%;
+    width: 70%;
+    float: none;
+    margin: 0 15%;
   }
   #bio{
     width: 60%;
