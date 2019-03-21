@@ -43,6 +43,10 @@ h3 {
 	color: rgb(255, 165, 24);
 	font-size: 1.5em;
 }
+h4, h5 {
+  color: rgb(236, 255, 6);
+  font-size: 1em;
+}
 #search {
 	float: right;
   width: 50%;
@@ -69,7 +73,7 @@ header nav {
 ul li {
   border-right: white .24em solid;
 }
-ul {
+nav > ul {
   list-style-type: none;
   width: 100%;
 }
@@ -165,7 +169,7 @@ p.date {
   font-style: italic;
   font-size: 1.5em;
 }
-article {
+.featured {
   display: block;
   float: left;
   margin: auto;
@@ -174,17 +178,65 @@ article {
   border-top: white 1px solid;
   border-right: white 1px solid;
 }
-article:nth-of-type(even) {
+.featured:nth-of-type(even) {
   border-right: hidden;
 }
-article:nth-of-type(1) {
+.featured:nth-of-type(1) {
   border-top: hidden;
 }
-article:nth-of-type(2) {
+.featured:nth-of-type(2) {
   border-top: hidden;
 }
-article p {
+.featured p {
   text-align: justify;
+}
+main {
+  float: left;
+  clear: both;
+  width: 60%;
+  padding: 0 0 2em 2em;
+}
+.blog {
+  background-color: rgb(33, 164, 178);
+  border-radius: 1.5em;
+  padding: 2.2em;
+  margin: 2%;
+  width: 100%;
+}
+.blog article > img {
+  margin-left: 20%;
+  margin-right: 20%;
+  width: 60%;
+}
+aside {
+  float: right;
+  background-color: rgb(33, 164, 178);
+  border-radius: 1.5em;
+  width: 30%;
+  padding: 2em;
+  margin: 2% 5%;
+}
+#aside > li{
+  float: none;
+  border-right: none;
+  width: 100%;
+  text-align: left;
+}
+#aside > li a{
+  text-align: left;
+}
+#popular_posts {
+  border-top: white 1px solid;
+  padding: 2em;
+}
+#blog_about {
+  padding: 0.5em 2em 1em 2em;
+  text-align: justify;
+}
+#blogheadshot {
+  width: 80%;
+  padding: 3%;
+  margin: 0 10%;
 }
 #newsletter	{
   background-color: rgb(33, 164, 178);
@@ -217,21 +269,24 @@ article p {
 }
 footer {
 	background-color: rgb(33, 164, 178);
-	padding: 5%;
+	clear: both;
+  padding: 5%;
   margin: auto;
 	width: 100%;
 }
 #social {
-  width: 80%;
-  margin: 0 40%;
-  padding: 0 5em;
+  width: 33%;
+  margin: 0 auto;
 }
 #social img {
-	width: 5%;
+	width: 11%;
+}
+#social a:hover {
+  background-color: transparent;
 }
 #copyright {
-  width: 100%;
-  text-align: center;
+  width: 33%;
+  margin: 0 auto;
 }
 .clearfix:after {
   content: " ";
@@ -270,10 +325,6 @@ footer {
     padding: 2%;
     clear: both;
   }
-  #social img {
-    width: 7.5%;
-    padding: 0;
-  }
   img#headshot {
     width: 42%;
   }
@@ -304,17 +355,17 @@ footer {
   #articles h3{
     font-size: 1.7em;
   }
-  article {
+  .featured {
     float: none;
     border-right: none;
     width: 85%;
     padding: 7%;
     margin: 0 auto;
   }
-  article:nth-of-type(1) {
+  .featured:nth-of-type(1) {
     border-top: white 2px solid;
   }
-  article:nth-of-type(2) {
+  .featured:nth-of-type(2) {
     border-top: white 1px solid;
   }
   body {
@@ -354,14 +405,27 @@ footer {
     margin: 1% 10%;
   }
   #submit {
-  padding: 1%;
-  margin: 1% 25%;
+    padding: 1%;
+    margin: 1% 25%;
   }
-  #social {
-  margin: 0 35%;
+  #copyright{
+    width: 100%;
+    text-align: center;
   }
-  #social img {
-  width: 9%;
+}
+@media only screen and (max-width: 965px) {
+  aside {
+    display: none;
+  }  
+  main {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+  .blog {
+    width: 80%;
+    margin: 5% auto;
+    padding: 2em;
   }
 }
 @media only screen and (max-width: 816px) {
@@ -369,12 +433,6 @@ footer {
     width: 60%;
     float: none;
     margin: 0% 20%;
-  }
-  #social img {
-  width: 4em;
-  }
-  #social {
-  margin: 0 20%;
   }
 }
 @media only screen and (max-width: 750px) {
@@ -418,9 +476,6 @@ footer {
   }
   #welcome {
     background-image: url('../images/bali-swing.jpg');
-  }
-  #social {
-  margin: 0 auto;
   }
 }
 @media only screen and (max-width: 480px) {
